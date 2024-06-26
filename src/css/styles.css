@@ -53,7 +53,8 @@ body {
   border-color: #4e75ff;
 }
 
-.search-form__button {
+.search-form__button,
+.load-more_button {
   font-weight: 500;
   color: #ffffff;
   background-color: #4e75ff;
@@ -64,13 +65,20 @@ body {
   transition: background-color 200ms ease-in;
 }
 
-.search-form__button:hover {
+.search-form__button:hover,
+.load-more_button:hover {
   background-color: #6c8cff;
 }
 
-.search-form__button:disabled {
+.search-form__button:disabled,
+.load-more_button:disabled {
   background-color: #b3bbd9;
 }
+
+.load-more_button {
+  display: flex;
+  margin: 0 auto;
+  }
 
 /*========= GALLERY ========*/
 
@@ -163,6 +171,10 @@ body {
 }
 
 .loader-hidden {
+  display: none;
+}
+
+.hidden {
   display: none;
 }
 
